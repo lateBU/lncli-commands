@@ -75,13 +75,17 @@
 |constrainmacaroon |Adds one or more restriction(s) to an existing macaroon|
 
 #### Mission Control
-querymc    Query the internal mission control state.
-queryprob  Estimate a success probability.
-resetmc    Reset internal mission control state.
-getmccfg   Display mission control's config.
-setmccfg   Set mission control's config.
+|command|description|
+| --- | --- |
+|querymc |Query the internal mission control state.|
+|queryprob |Estimate a success probability.|
+|resetmc |Reset internal mission control state.|
+|getmccfg |Display mission control's config.|
+|setmccfg |Set mission control's config.|
 
 #### Neutrino
+|command|description|
+| --- | --- |
 |neutrino |Interact with a running neutrino instance.|
 
 #### On-chain
