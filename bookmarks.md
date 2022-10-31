@@ -3,5 +3,7 @@
 
 https://medium.com/coinmonks/lightning-at-the-command-line-4b98fccf5c36
 
-next
+##### Enable Channel Backups and Fund Recovery on LND
+https://medium.com/@rahil471/enable-channel-backups-and-fund-recovery-on-lnd-lightning-network-3f27be42eb43
+
 
