@@ -15,6 +15,9 @@
 |stop |Stop and shutdown the daemon.|
 |help, h|Shows a list of commands or help for one command|
 
+####Autopilot
+|autopilot |Interact with a running autopilot|
+
 #### Channels
 |command|description|
 | --- | --- |
