@@ -28,6 +28,7 @@
 |command|description|
 | --- | --- |
 |openchannel |Open a channel to a node or an existing peer.|
+|batchopenchannel |Open multiple channels to existing peers in a single transaction.|
 |closechannel |Close an existing channel.|
 |closeallchannels |Close all existing channels.|
 |abandonchannel |Abandons an existing channel.|
@@ -35,13 +36,14 @@
 |pendingchannels |Display information pertaining to pending channels.|
 |listchannels |List all open channels.|
 |closedchannels |List all closed channels.|
-|getchaninfo |Get the state of a channel.|
 |getnetworkinfo |Get statistical information about the current state of the network.|
 |feereport |Display the current fee policies of all active channels.|
 |updatechanpolicy |Update the channel policy for all channels, or a single channel.|
 |exportchanbackup |Obtain a static channel back up for a selected channels, or all known channels|
 |verifychanbackup |Verify an existing channel backup|
-|restorechanbackup |Restore an existing single or multi-channel static channel backup|
+|restorechanbackup |Restore an existing single or multi-channel static channel backup.|
+|listaliases |List all aliases.|
+|updatechanstatus |Set the status of an existing channel on the network.|
 
 #### Macaroons
 |command|description|
