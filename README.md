@@ -46,12 +46,16 @@
 |updatechanstatus |Set the status of an existing channel on the network.|
 
 #### Graph
+|command|description|
+| --- | --- |
 |describegraph |Describe the network graph.|
 |getnodemetrics |Get node metrics.|
 |getchaninfo |Get the state of a channel.|
 |getnodeinfo |Get information on a specific node.|
 
 #### Invoices
+|command|description|
+| --- | --- |
 |addinvoice |Add a new invoice.|
 |lookupinvoice |Lookup an existing invoice by its payment hash.|
 |listinvoices |List all invoices currently stored within the database. Any active debug invoices are ignored.|
