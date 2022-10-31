@@ -45,6 +45,21 @@
 |listaliases |List all aliases.|
 |updatechanstatus |Set the status of an existing channel on the network.|
 
+#### Graph
+|describegraph |Describe the network graph.|
+|getnodemetrics |Get node metrics.|
+|getchaninfo |Get the state of a channel.|
+|getnodeinfo |Get information on a specific node.|
+
+#### Invoices
+|addinvoice |Add a new invoice.|
+|lookupinvoice |Lookup an existing invoice by its payment hash.|
+|listinvoices |List all invoices currently stored within the database. Any active debug invoices are ignored.|
+|decodepayreq |Decode a payment request.|
+|cancelinvoice |Cancels a (hold) invoice.|
+|addholdinvoice |Add a new hold invoice.|
+|settleinvoice |Reveal a preimage and use it to settle the corresponding invoice.|
+
 #### Macaroons
 |command|description|
 | --- | --- |
