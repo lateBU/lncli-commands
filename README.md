@@ -68,6 +68,12 @@
 |command|description|
 | --- | --- |
 |bakemacaroon |Bakes a new macaroon with the provided list of permissions and restrictions|
+|listmacaroonids |List all macaroons root key IDs in use.|
+|deletemacaroonid |Delete a specific macaroon ID.|
+|listpermissions |Lists all RPC method URIs and the macaroon permissions they require to be invoked.|
+|printmacaroon |Print the content of a macaroon in a human readable format.|
+|constrainmacaroon |Adds one or more restriction(s) to an existing macaroon|
+
 
 #### On-chain
 |command|description|
