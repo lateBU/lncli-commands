@@ -74,6 +74,15 @@
 |printmacaroon |Print the content of a macaroon in a human readable format.|
 |constrainmacaroon |Adds one or more restriction(s) to an existing macaroon|
 
+#### Mission Control
+querymc    Query the internal mission control state.
+queryprob  Estimate a success probability.
+resetmc    Reset internal mission control state.
+getmccfg   Display mission control's config.
+setmccfg   Set mission control's config.
+
+#### Neutrino
+     neutrino  Interact with a running neutrino instance.
 
 #### On-chain
 |command|description|
@@ -90,13 +99,14 @@
 |sendpayment |Send a payment over lightning.|
 |payinvoice |Pay an invoice over lightning.|
 |sendtoroute |Send a payment over a predefined route.|
-|addinvoice |Add a new invoice.|
-|lookupinvoice |Lookup an existing invoice by its payment hash.|
-|listinvoices |List all invoices currently stored within the database. Any active debug invoices are ignored.|
 |listpayments |List all outgoing payments.|
 |queryroutes |Query a route to a destination.|
-|decodepayreq |Decode a payment request.|
 |fwdinghistory |Query the history of all forwarded HTLCs.|
+     trackpayment    Track progress of an existing payment.
+     deletepayments  Delete a single or multiple payments from the database.
+     importmc        Import a result to the internal mission control state.
+     buildroute      Build a route from a list of hop pubkeys.
+
 
 #### Peers
 |command|description|
@@ -104,15 +114,21 @@
 |connect |Connect to a remote lnd peer.|
 |disconnect |Disconnect a remote lnd peer identified by public key.|
 |listpeers |List all active, currently connected peers.|
-|describegraph |Describe the network graph.|
-|getnodeinfo |Get information on a specific node.|
+     peers       Interacts with the other nodes of the newtwork
+
+#### Profiles
+profile  Create and manage lncli profiles.
+
 
 #### Startup
 |command|description|
 | --- | --- |
 |create |Initialize a wallet when starting lnd for the first time.|
+     createwatchonly  Initialize a watch-only wallet after starting lnd for the first time.
 |unlock |Unlock an encrypted wallet at startup.|
 |changepassword |Change an encrypted wallet's password at startup.|
+     state            Get the current state of the wallet and RPC
+
 
 #### Wallet
 |command|description|
@@ -121,10 +137,13 @@
 |walletbalance |Compute and display the wallet's current balance.|
 |signmessage |Sign a message with the node's private key.|
 |verifymessage |Verify a message signed with the signature.|
+     wallet         Interact with the wallet.
+
 
 #### Watchtower
 |command|description|
 | --- | --- |
+     tower     Interact with the watchtower.
 |wtclient |Interact with the watchtower client.|
 
 ## GLOBAL OPTIONS
@@ -132,6 +151,7 @@
 | --- | --- |
 |--rpcserver value        |host:port of ln daemon (default: "localhost:10009")|
 |--lnddir value           |path to lnd's base directory (default: "/home/tomosaigon/.lnd")|
+   --socksproxy value         The host:port of a SOCKS proxy through which all connections to the LN daemon will be established over.
 |--tlscertpath value      |path to TLS certificate (default: "/home/tomosaigon/.lnd/tls.cert")|
 |--chain value, -c value  |the chain lnd is running on e.g. bitcoin (default: "bitcoin")|
 |--network value, -n value|the network lnd is running on e.g. mainnet, testnet, etc. (default: "mainnet")|
@@ -139,6 +159,8 @@
 |--macaroonpath value     |path to macaroon file|
 |--macaroontimeout value  |anti-replay macaroon validity time in seconds (default: 60)|
 |--macaroonip value       |if set, lock macaroon to specific IP address|
+|--profile value, -p value |Instead of reading settings from command line parameters or using the default profile, use a specific profile. If a default profile is set, this flag can be set to an empty string to disable reading values from the profiles file.|
+|--macfromjar value       |Use this macaroon from the profile's macaroon jar instead of the default one. Can only be used if profiles are defined.|
 |--help, -h               |show help|
 |--version, -v            |print the version|
    
