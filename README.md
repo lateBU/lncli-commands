@@ -82,7 +82,7 @@ getmccfg   Display mission control's config.
 setmccfg   Set mission control's config.
 
 #### Neutrino
-     neutrino  Interact with a running neutrino instance.
+|neutrino |Interact with a running neutrino instance.|
 
 #### On-chain
 |command|description|
@@ -102,10 +102,10 @@ setmccfg   Set mission control's config.
 |listpayments |List all outgoing payments.|
 |queryroutes |Query a route to a destination.|
 |fwdinghistory |Query the history of all forwarded HTLCs.|
-     trackpayment    Track progress of an existing payment.
-     deletepayments  Delete a single or multiple payments from the database.
-     importmc        Import a result to the internal mission control state.
-     buildroute      Build a route from a list of hop pubkeys.
+|trackpayment |Track progress of an existing payment.|
+|deletepayments |Delete a single or multiple payments from the database|
+|importmc| Import a result to the internal mission control state.|
+|buildroute | Build a route from a list of hop pubkeys.|
 
 
 #### Peers
@@ -114,20 +114,22 @@ setmccfg   Set mission control's config.
 |connect |Connect to a remote lnd peer.|
 |disconnect |Disconnect a remote lnd peer identified by public key.|
 |listpeers |List all active, currently connected peers.|
-     peers       Interacts with the other nodes of the newtwork
+|peers |Interacts with the other nodes of the newtwork|
 
 #### Profiles
-profile  Create and manage lncli profiles.
+|command|description|
+| --- | --- |
+|profile |Create and manage lncli profiles.|
 
 
 #### Startup
 |command|description|
 | --- | --- |
 |create |Initialize a wallet when starting lnd for the first time.|
-     createwatchonly  Initialize a watch-only wallet after starting lnd for the first time.
+|createwatchonly |Initialize a watch-only wallet after starting lnd for the first time.|
 |unlock |Unlock an encrypted wallet at startup.|
 |changepassword |Change an encrypted wallet's password at startup.|
-     state            Get the current state of the wallet and RPC
+|state |Get the current state of the wallet and RPC|
 
 
 #### Wallet
@@ -137,13 +139,13 @@ profile  Create and manage lncli profiles.
 |walletbalance |Compute and display the wallet's current balance.|
 |signmessage |Sign a message with the node's private key.|
 |verifymessage |Verify a message signed with the signature.|
-     wallet         Interact with the wallet.
+|wallet |Interact with the wallet.|
 
 
 #### Watchtower
 |command|description|
 | --- | --- |
-     tower     Interact with the watchtower.
+|tower |Interact with the watchtower.|
 |wtclient |Interact with the watchtower client.|
 
 ## GLOBAL OPTIONS
@@ -151,7 +153,7 @@ profile  Create and manage lncli profiles.
 | --- | --- |
 |--rpcserver value        |host:port of ln daemon (default: "localhost:10009")|
 |--lnddir value           |path to lnd's base directory (default: "/home/tomosaigon/.lnd")|
-   --socksproxy value         The host:port of a SOCKS proxy through which all connections to the LN daemon will be established over.
+|--socksproxy value       |The host:port of a SOCKS proxy through which all connections to the LN daemon will be established over.|
 |--tlscertpath value      |path to TLS certificate (default: "/home/tomosaigon/.lnd/tls.cert")|
 |--chain value, -c value  |the chain lnd is running on e.g. bitcoin (default: "bitcoin")|
 |--network value, -n value|the network lnd is running on e.g. mainnet, testnet, etc. (default: "mainnet")|
