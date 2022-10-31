@@ -3,5 +3,7 @@
 
 `https://medium.com/coinmonks/lightning-at-the-command-line-4b98fccf5c36`
 
+https://medium.com/coinmonks/lightning-at-the-command-line-4b98fccf5c36
+
 next
 
