@@ -11,11 +11,15 @@
 |command|description|
 | --- | --- |
 |getinfo |Returns basic information related to the active daemon.|
+|getrecoveryinfo |Display information about an ongoing recovery attempt.|
 |debuglevel |Set the debug level.|
 |stop |Stop and shutdown the daemon.|
+|version |Display lncli and lnd version info.|
+|sendcustom|
+|subscribecustom|
 |help, h|Shows a list of commands or help for one command|
 
-#### AUTOPILOT
+#### Autopilot
 |command|description|
 | --- | --- |
 |autopilot |Interact with a running autopilot|
